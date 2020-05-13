@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <script src="https://kit.fontawesome.com/3975e2dbb7.js" crossorigin="anonymous"></script>
   <title>Store your files</title>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-    body{
-      background-color: rgba(49, 43, 43, 0.322);
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .header{
+    body {
+      /* background-color: rgba(49, 43, 43, 0.322); */
+    }
+
+    .header {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -24,7 +31,14 @@
       margin-right: 30px;
     }
 
-    .menu{
+    .header img{
+      height: 15%;
+      width: 15%;
+      margin-top: 30px;
+    }
+
+    .menu {
+      margin-top: 30px;
       display: flex;
       flex-direction: row;
       padding: 20px;
@@ -34,27 +48,30 @@
       margin-left: 20px;
     }
 
-    .section-1{
+    .section-1 {
       display: flex;
       flex-direction: row;
       padding: 70px;
     }
 
+    .section-1 .text {
+      display: flex;
+      flex-direction: column;
+    }
+
     .section-1 img {
-      width: 60%;
-      height: 60%;
+      width: 50%;
+      height: 50%;
+      margin-right: -60px;
     }
 
     h1 {
       font-family: 'Raleway', sans-serif;
       font-size: 35px;
+      margin-bottom: 30px;
     }
 
-    .text p {
-      font-size: 20px;
-    }
-
-    button{
+    button {
       background-color: #3065f8;
       color: #FFFF;
       font-family: 'Raleway', sans-serif;
@@ -66,30 +83,38 @@
       margin-top: 10px;
     }
 
-    p{
+   
+    p {
       font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
     }
 
-    .section-2, .section-3{
+    .section-2,
+    .section-3,
+    .section-4 {
       display: flex;
       flex-direction: row;
     }
+    .section-2{
+      margin-left: 60px;
+    }
 
-    .section-2 img{
+    .section-2 img {
       width: 50%;
       height: 50%;
     }
 
-    .testimonial img{
+    .testimonial img {
       width: 10%;
       height: 10%;
     }
+
     .section-3 {
       color: #ffff;
       background-color: #585989;
     }
 
-    .call-to-action{
+    .call-to-action {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -105,109 +130,150 @@
     .section-4 {
       color: #ffff;
       background-color: #070439;
-      
+      font-family: 'Open Sans', sans-serif;
+      justify-content: space-around;
+
     }
 
+    .footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: left; 
+      margin-top: 90px;
+      margin-bottom: 90px;
+    }
+
+    .footer img {
+      color: #ffff;
+    }
+
+    .social-media{
+      margin-top: 90px;
+      margin-bottom: 90px;
+      display: flex;
+      flex-direction: row; 
+      justify-content: center;
+      align-items: center;     
+    }
+
+    div .icon {
+      margin-right: 10px
+    }
+
+    div .icon {
+      background-color:transparent;
+      border-radius: 40px;
+      border: 2px solid #ffff;
+      margin-left: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+    }
   </style>
 </head>
+
 <body>
 
-<div class="header">
-  <img src="/images/logo.svg">
-  <div class="menu">
-    <div>Features</div>
-    <div>Team</div>
-    <div>Sign In</div>
-  </div>
-</div>
- 
- <div class="container">
-  <div class="section-1">
-    <div class="text">
-      <h1>All your files in one secure location, accessible anywhere.</h1>
-      
-      <p>Fylo stores your most important files in one secure location. 
-        Access them wherever you need, share and collaborate with friends, 
-        family, and co-workers.</p>
-        <input type="email">
-        <button> Get Started</button>
+  <div class="header">
+    <img src="/images/logo.svg">
+    <div class="menu">
+      <div>Features</div>
+      <div>Team</div>
+      <div>Sign In</div>
     </div>
-    <img src="/images/illustration-1.svg">
   </div>
 
-  <div class="section-2">
-    <div class="content">
-      <h1>Stay productive, wherever you are</h1>
-      
-      <p>Never let location be an issue when accessing your files. Fylo has you 
-        covered for all of your file storage needs.</p>
-        
-      <p>Securely share files and folders with friends, family and colleagues for 
+  <div class="container">
+    <div class="section-1">
+      <div class="text">
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+
+        <p>Fylo stores your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends,
+          family, and co-workers.</p>
+          <div>
+            <input type="email">
+            <button> Get Started</button>
+          </div>
+      </div>
+      <img src="/images/illustration-1.svg">
+    </div>
+
+    <div class="section-2">
+      <div class="content">
+        <h1>Stay productive, wherever you are</h1>
+
+        <p>Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.</p>
+
+        <p>Securely share files and folders with friends, family and colleagues for
           live collaboration. No email attachments required!</p>
-          
-      <h3>See how Fylo works</h3>
-          
-      <div class="feedback">
-        <p>Fylo has improved our team productivity by an order of magnitude. Since 
-          making the switch our team has become a well-oiled collaboration machine.</p>
-        <div class="testimonial">
-          <img src="/images/avatar-testimonial.jpg">
-          <p>Kyle Burton</p>
-          <p>Founder & CEO, Huddle</p>
+
+        <h3>See how Fylo works</h3>
+
+        <div class="feedback">
+          <p>Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.</p>
+          <div class="testimonial">
+            <img src="/images/avatar-testimonial.jpg">
+            <p>Kyle Burton</p>
+            <p>Founder & CEO, Huddle</p>
+          </div>
         </div>
-       </div>
-    </div>
-    <img src="/images/illustration-2.svg">
-  </div>
-  
-  <div class="section-3">
-    <div>
-      <h2>Get early access today</h2>
-      
-      <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
-        If you have any questions, our support team would be happy to help you.</p>
+      </div>
+      <img src="/images/illustration-2.svg">
     </div>
 
-    <div class="call-to-action">
-      <input type="email">
-      <button>
-        Get Started For Free
-      </button>
+    <div class="section-3">
+      <div>
+        <h2>Get early access today</h2>
+
+        <p>It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.</p>
+      </div>
+
+      <div class="call-to-action">
+        <input type="email">
+        <button>
+          Get Started For Free
+        </button>
+      </div>
+    </div>
+
+    <div class="section-4">
+      <div class="footer">
+        <img src="/images/logo.svg">
+        <span><i class="fas fa-phone-volume"></i> Phone: +1-543-123-4567</span>
+        <span><i class="fas fa-envelope"></i> contact@fylo.com</span>
+      </div>
+      <div class="footer">
+        <span>About Us</span>
+        <span>Jobs</span>
+        <span>Press</span>
+        <span>Blog</span>
+      </div>
+
+      <div class="footer">
+        <span>Contact Us</span>
+        <span>Terms</span>
+        <span>Privacy</span>
+      </div>
+      <div class="social-media">
+        <div class="icon"><i class="fab fa-facebook-f"></i></div>
+        <div class="icon"><i class="fab fa-twitter"></i></div>
+        <div class="icon"><i class="fab fa-instagram"></i></div>
+      </div>
     </div>
   </div>
 
-  <div class="section-4">
-    <div>
-    <img src="/images/logo.svg"> 
-    Phone: +1-543-123-4567
-    example@fylo.com
-  </div>
-
-  <div>
-    About Us
-    Jobs
-    Press
-    Blog
-  </div>
-  
-  <div>
-    Contact Us
-    Terms
-    Privacy
-  </div>
-  
-  <div>
-    <div>icon1</div>
-    <div>icon2</div>
-    <div>icon3</div>
-  </div>
-  </div>
-</div>
-  
   <footer>
     <p class="attribution">
       Coded by <a href="https://github.com/Lorenalgm">Lorena GM</a>.
     </p>
   </footer>
 </body>
+
 </html>
